@@ -20,7 +20,6 @@ angular2 flex widgets
 }
 </pre>
 
-
 <pre>
 // contents of json file get mapped to this interface
 export interface WidgetInterface {
@@ -32,5 +31,25 @@ export interface WidgetInterface {
     classes?: string[]; // array of class names
     style?: any;        // style object, e.g. {"prop1": "value", "prop2": "value", ... "propN": "value"}
 };
+</pre>
+
+<pre>
+// add dynamic components to widgets.map.ts
+
+import {Component} from '@angular/core';
+
+// for each dynamic component, e.g.
+import {HelloComponent} from '../hello/hello.component'
+
+export const WidgetMap:any = {
+    // for each dynamic component, e.g.
+    'app-hello': HelloComponent
+};
+</pre>
+
+<pre>
+// add dynamic components to app module's entryComponents array
+
+entryComponents:[HelloComponent],
 </pre>
 
