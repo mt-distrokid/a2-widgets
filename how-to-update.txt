@@ -1,3 +1,4 @@
+GIT_SSL_VERSION="";export GIT_SSL_VERSION
 #git init
 #git pull https://github.com/mt1955/a2-widgets
 git add *.*
@@ -8,3 +9,4 @@ git push
 #npm adduser <your username>
 npm version "#.#.#"
 npm publish
+
