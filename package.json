@@ -1,0 +1,22 @@
+{
+  "name": "a2-widgets",
+  "version": "1.0.0",
+  "description": "flex box widgets for Angular2",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mt1955/a2-widgets.git"
+  },
+  "keywords": [
+    "angular2",
+    "widgets"
+  ],
+  "author": "Michael",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mt1955/a2-widgets/issues"
+  },
+  "homepage": "https://github.com/mt1955/a2-widgets#readme"
+}

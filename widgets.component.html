@@ -1,0 +1,6 @@
+<div class="widgets">
+    <app-widget class="app-widget" 
+        *ngFor="let w of widgets; let idx = index" 
+        [widget]="widgets_options[idx]"
+    ></app-widget>
+</div>

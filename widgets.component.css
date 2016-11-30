@@ -1,0 +1,12 @@
+
+.widgets {
+    position: relative;
+    height: 100%;
+    background-color: #ddd;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    overflow: hidden;
+}

@@ -1,0 +1,32 @@
+.widget {
+    position:relative;
+    min-width: 300px;
+    min-height: 250px;
+    margin: 3%;
+    background-color: white;
+}
+
+.widget .title {
+    position: relative;
+    background-color: #003;
+    color: white;
+    padding: 0.5em;
+}
+
+.widget .widget-body {
+    position: absolute;
+    top:2.2em;left:0;right:0;bottom:0;
+    overflow: auto;
+    padding: 0.5em;
+}
+
+.widget.unpadded .widget-body {
+    padding: 0;
+}
+
+.widget IFRAME {
+    display: block;
+    border: none;
+    overflow: auto;
+    height: 100%;
+}
