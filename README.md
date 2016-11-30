@@ -1,6 +1,7 @@
 # a2-widgets
 angular2 flex widgets
 
+<pre>
 // example widget definitions
 {
     "data":[
@@ -17,3 +18,5 @@ angular2 flex widgets
         }
     ]
 }
+</pre>
+
