@@ -1,5 +1,6 @@
 import { Component, Directive, Input } from '@angular/core';
 import { WidgetInterface } from './widget.interface';
+import { AppModule } from '../app.module';
 
 @Component({
   selector: 'app-widget',
@@ -29,7 +30,7 @@ export class DynamicWidgetDirective {
 
   @Input('dynamicWidget') selector: string;
 
-  constructor(private _viewContainerRef: ViewContainerRef, private _cmpFactoryResolver: ComponentFactoryResolver) { }
+  constructor(private _viewContainerRef: ViewContainerRef, private _cmpFactoryResolver: ComponentFactoryResolver) {}
 
   ngOnInit() {
 

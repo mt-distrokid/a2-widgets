@@ -1,0 +1,10 @@
+#git init
+#git pull https://github.com/mt1955/a2-widgets
+git add *.*
+#git push --set-upstream https://github.com/mt1955/a2-widgets master
+git commit
+git push 
+
+#npm adduser <your username>
+npm version "#.#.#"
+npm publish

@@ -2,6 +2,7 @@ import { Component, OnInit, Compiler, ViewContainerRef, ComponentFactoryResolver
 import { WidgetComponent } from '../widgets/widget.component';
 import { WidgetInterface } from '../widgets/widget.interface';
 import { WidgetsService } from './widgets.service'
+import { WidgetsModule } from './widgets.module'
 
 @Component({
   selector: 'app-widgets',
@@ -23,7 +24,7 @@ export class WidgetsComponent implements OnInit {
 
   ngOnInit() {
 
-    this._widgetsService.fetchWidgets().then(widget_options => {
+    this._widgetsService.fetchWidgets(WidgetsModule.getWidgetsURL()).then(widget_options => {
 
       this.widgets_options = widget_options;
       for (let i in this.widgets_options) {
