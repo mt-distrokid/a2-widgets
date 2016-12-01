@@ -14,7 +14,7 @@ npm install a2-widgets --save
                     "widgets": [
                         {
                                 "title": "Widget HTML",
-                                "html": "&lt;b>This is some static HTML...&lt;/b>"
+                                "html": "<b>This is some static HTML...</b>"
                         }, 
                         {
                                 "title": "Widget Component",
