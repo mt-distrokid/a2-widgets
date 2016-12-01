@@ -74,7 +74,7 @@ npm install a2-widgets --save
 	})
     ```
 
-3. If you are using routes, add the **widgets.component** to your route table. Otherwise use 
+3. If you are using routes, add the **widgets.component** to your route table. Otherwise add the widgets to DOM;
 
     ```
         <app-widgets></app-widgets>
