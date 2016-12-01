@@ -33,7 +33,7 @@ export const appCentral = {
         }
       }
     ),
-    RouterModule.forRoot(appCentral.routeTable, { useHash: true }), // TODO: as child routes
+    RouterModule.forRoot(appCentral.routeTable, {useHash: true}),
   ],
   declarations: [
     AppComponent,
