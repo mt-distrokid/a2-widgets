@@ -2,12 +2,12 @@
 angular2 flex widgets
 
 
-<xmp>
+<pre>
 // example widget definitions json file
 {
     "data":[
         {"title":"Widget HTML",
-         "html": "<b>This is some static HTML...</b>"
+         "html": "&lt;b>This is some static HTML...&lt;/b>"
         },
         {"title":"Widget Component",
          "component": "app-hello",
@@ -19,7 +19,7 @@ angular2 flex widgets
         }
     ]
 }
-</xmp>
+</pre>
 
 <pre>
 // contents of json file get mapped to this interface
