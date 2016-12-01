@@ -8,9 +8,7 @@ npm install a2-widgets --save
 
 ## Configuration
 
-1. Create a json file that defines your widgets.
-
-    Example widget definitions json file;
+1. Create a json file that defines your widgets. Example widget definitions json file;
     ```
 {
     "data":[
