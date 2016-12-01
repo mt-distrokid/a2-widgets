@@ -51,23 +51,21 @@ npm install a2-widgets --save
     ```
         Import { WidgetsModule } "../node_modules/a2-widgets/widgets.module";
 
-	@NgModule({
-	  imports: [
-	    ...
-	    WidgetsModule.setOptions(
-	      { 
-       		 widgets_url: "./app/resources/data/custom.json",
-       		 components: {
-	          'app-hello': HelloComponent
-       		 }
-      		}
-   	    ),
-    	    ...
-           ],
-           entryComponents: [
-             HelloComponent
-           ],
-  	   bootstrap: [AppComponent]
+        @NgModule({
+        imports: [
+            ...
+            WidgetsModule.setOptions({ 
+                widgets_url: "./app/resources/data/custom.json",
+                components: {
+                    'app-hello': HelloComponent
+                }
+            }),
+            ...
+            ],
+            entryComponents: [
+              HelloComponent
+            ],
+            bootstrap: [AppComponent]
 	})
     ```
 
