@@ -53,7 +53,7 @@ npm install a2-widgets --save
     and to the **entryComponents** array.
 
     ```
-        Import { WidgetsModule } "../node_modules/a2-widgets/widgets.module";
+        Import { WidgetsModule } "a2-widgets/widgets.module";
 
         @NgModule({
         imports: [
