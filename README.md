@@ -46,7 +46,7 @@ npm install a2-widgets --save
     ```
 
 
-2. Add the WidgetsModule to app module imports;
+2. Add the *WidgetsModule* to app module imports;
 
     ```
         Import { WidgetsModule } "../node_modules/a2-widgets/widgets.module";
