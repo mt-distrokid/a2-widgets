@@ -69,6 +69,7 @@ npm install a2-widgets --save
             entryComponents: [
               HelloComponent
             ],
+            ...
             bootstrap: [AppComponent]
 	})
     ```
