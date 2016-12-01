@@ -1,5 +1,9 @@
 # a2-widgets
-angular2 flex widgets
+## angular2 flex widgets
+
+```
+npm install a2-widgets --save
+```
 
 
 <pre>
