@@ -7,4 +7,3 @@ export interface WidgetInterface {
     classes?: string[]; // array of class names
     style?: any;        // style object, e.g. {"prop1": "value", "prop2": "value", ... "propN": "value"}
 };
-

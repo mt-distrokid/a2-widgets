@@ -12,7 +12,7 @@ export class WidgetsService {
         
         return this._http.get(url)
             .toPromise()
-            .then(res => <WidgetInterface[]> res.json().data)
-            .then(data => { return data; });
+            .then(res => <WidgetInterface[]> res.json().widgets)
+            .then(widgets => { return widgets; });
     }
 }

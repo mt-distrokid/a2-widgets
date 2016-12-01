@@ -1,5 +1,5 @@
 import { NgModule, ModuleWithProviders } from '@angular/core'; 
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule } from '@angular/platform-browser'; // this is so ngIf, etc works
 
 import { WidgetInterface } from './widget.interface';
 import { WidgetsComponent } from './widgets.component';
@@ -9,7 +9,15 @@ export { WidgetsComponent } from './widgets.component'
 
 export interface WidgetOptions {
   widgets_url?:string
+  components?: {
+    // selector: components
+  }
 }
+
+export let WidgetMap:any = {
+    // for each dynamic component
+    //'app-hello': HelloComponent
+};
 
 @NgModule({
   imports: [
@@ -28,9 +36,14 @@ export class WidgetsModule {
 
     private static widgetsURL = null;
 
-    static setOptions(opts?: WidgetOptions) {
+    static setOptions(opts: WidgetOptions) {
 
-        this.widgetsURL = opts && opts.widgets_url;
+        this.widgetsURL = opts.widgets_url;
+        for (var selector in opts.components) {
+            if (opts.components[selector]) {
+              WidgetMap[selector] = opts.components[selector];
+            }
+        }
         return this;
     };
 

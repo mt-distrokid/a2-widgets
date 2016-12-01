@@ -22,7 +22,7 @@ export class SafeHTMLPipe implements PipeTransform {
 
 
 import {ViewContainerRef,  ComponentFactoryResolver } from '@angular/core';
-import { WidgetMap } from './widgets.map';
+import { WidgetMap } from './widgets.module';
 
 @Directive({selector: '[dynamicWidget]'})
 export class DynamicWidgetDirective {
@@ -43,4 +43,3 @@ export class DynamicWidgetDirective {
      }
   }
 }
-
