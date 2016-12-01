@@ -11,20 +11,24 @@ npm install a2-widgets --save
 1. Create a json file that defines your widgets. Example widget definitions json file;
     ```
                 {
-                        "widgets": [{
+                    "widgets": [
+                        {
                                 "title": "Widget HTML",
                                 "html": "&lt;b>This is some static HTML...&lt;/b>"
-                        }, {
+                        }, 
+                        {
                                 "title": "Widget Component",
                                 "component": "app-hello",
                                 "style": {
                                         "height": "400px"
                                 }
-                        }, {
+                        }, 
+                        {
                                 "title": "Widget iFrame",
                                 "url": "https://weather.com/",
                                 "classes": ["unpadded"]
-                        }]
+                        }
+                   ]
                 }
     ```
 
