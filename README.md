@@ -11,7 +11,7 @@ npm install a2-widgets --save
 1. Create a json file that defines your widgets.
 
     Example widget definitions json file;
-    <pre>
+    ```
 {
     "data":[
         {"title":"Widget HTML",
@@ -27,10 +27,10 @@ npm install a2-widgets --save
         }
     ]
 }
-    </pre>
+    ```
 
     Contents of the json file are mapped to this interface;
-    <pre>
+    ```
 	export interface WidgetInterface {
 	    id?:string;         // unique id automatically assigned
 	    title?: string;     // title of widget
@@ -40,13 +40,13 @@ npm install a2-widgets --save
 	    classes?: string[]; // array of class names
 	    style?: any;        // style object, e.g. {"prop1": "value", "prop2": "value", ... "propN": "value"}
 	};
-    </pre>
+    ```
 
 
 2. For each component based widget
     1. Add component to WidgetMap in widgets.map.ts
 
-        <pre>
+        ```
 		import {Component} from '@angular/core';
 
 		// for each dynamic component, e.g.
@@ -56,13 +56,13 @@ npm install a2-widgets --save
 	    	    // for each dynamic component, e.g.
 		    'app-hello': HelloComponent
 		};
-        </pre>
+        ```
 
     2. Add component to entryComponents in app module
 
-        <pre>
+        ```
 		...
 		entryComponents:[HelloComponent],
 		...
-        </pre>
+        ```
 
