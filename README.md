@@ -10,8 +10,8 @@ npm install a2-widgets --save
 
 1. Create a json file that defines your widgets.
 
-Example widget definitions json file;
-<pre>
+    Example widget definitions json file;
+    <pre>
 {
     "data":[
         {"title":"Widget HTML",
@@ -27,10 +27,10 @@ Example widget definitions json file;
         }
     ]
 }
-</pre>
+    </pre>
 
-Contents of the json file are mapped to this interface;
-<pre>
+    Contents of the json file are mapped to this interface;
+    <pre>
 export interface WidgetInterface {
     id?:string;         // unique id automatically assigned
     title?: string;     // title of widget
@@ -40,7 +40,7 @@ export interface WidgetInterface {
     classes?: string[]; // array of class names
     style?: any;        // style object, e.g. {"prop1": "value", "prop2": "value", ... "propN": "value"}
 };
-</pre>
+    </pre>
 
 
 2. For each component based widget
