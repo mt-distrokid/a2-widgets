@@ -46,7 +46,7 @@ npm install a2-widgets --save
     ```
 
 
-2. Add the **WidgetsModule** to your app module;
+2. Add the **WidgetsModule** to your app module. In this example, one widget renders the HelloComponent;
 
     ```
         Import { WidgetsModule } "../node_modules/a2-widgets/widgets.module";
