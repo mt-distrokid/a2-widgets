@@ -1,6 +1,7 @@
-# a2-widgets
-## angular2 flex widgets
+# Angular2 flex widgets
 
+## Installing
+You can add a2-widgets to your project using npm;
 ```
 npm install a2-widgets --save
 ```
