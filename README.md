@@ -31,15 +31,15 @@ npm install a2-widgets --save
 
     Contents of the json file are mapped to this interface;
     <pre>
-export interface WidgetInterface {
-    id?:string;         // unique id automatically assigned
-    title?: string;     // title of widget
-    html?: string;      // html to be rendered
-    url?: string;       // url to be iframed
-    component?: string; // component selector
-    classes?: string[]; // array of class names
-    style?: any;        // style object, e.g. {"prop1": "value", "prop2": "value", ... "propN": "value"}
-};
+	export interface WidgetInterface {
+	    id?:string;         // unique id automatically assigned
+	    title?: string;     // title of widget
+	    html?: string;      // html to be rendered
+	    url?: string;       // url to be iframed
+	    component?: string; // component selector
+	    classes?: string[]; // array of class names
+	    style?: any;        // style object, e.g. {"prop1": "value", "prop2": "value", ... "propN": "value"}
+	};
     </pre>
 
 
@@ -47,22 +47,22 @@ export interface WidgetInterface {
     1. Add component to WidgetMap in widgets.map.ts
 
         <pre>
-import {Component} from '@angular/core';
+		import {Component} from '@angular/core';
 
-// for each dynamic component, e.g.
-import {HelloComponent} from '../hello/hello.component'
+		// for each dynamic component, e.g.
+		import {HelloComponent} from '../hello/hello.component'
 
-export const WidgetMap:any = {
-    // for each dynamic component, e.g.
-    'app-hello': HelloComponent
-};
+		export const WidgetMap:any = {
+	    	    // for each dynamic component, e.g.
+		    'app-hello': HelloComponent
+		};
         </pre>
 
     2. Add component to entryComponents in app module
 
         <pre>
-...
-entryComponents:[HelloComponent],
-...
+		...
+		entryComponents:[HelloComponent],
+		...
         </pre>
 
