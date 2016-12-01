@@ -26,3 +26,4 @@ describe('WidgetsComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+

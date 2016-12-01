@@ -7,3 +7,4 @@ export const WidgetMap:any = {
     // for each dynamic component, e.g.
     // 'app-hello': HelloComponent
 };
+

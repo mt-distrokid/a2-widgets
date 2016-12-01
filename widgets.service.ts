@@ -6,11 +6,11 @@ import { WidgetInterface } from './widget.interface';
 @Injectable()
 export class WidgetsService {
 
-    constructor(private http: Http) {}
+    constructor(private _http: Http) {}
 
     fetchWidgets(url: string) {
         
-        return this.http.get(url)
+        return this._http.get(url)
             .toPromise()
             .then(res => <WidgetInterface[]> res.json().data)
             .then(data => { return data; });

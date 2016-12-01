@@ -4,4 +4,3 @@
     <div *ngIf="widget.url" class="widget-body"><iframe [src]="widget.url | safehtml"></iframe></div> <!-- iframe -->
     <div *ngIf="widget.component" [dynamicWidget]="widget.component"></div> <!-- some other component -->
 </div>
-

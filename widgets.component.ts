@@ -1,6 +1,6 @@
 import { Component, OnInit, Compiler, ViewContainerRef, ComponentFactoryResolver} from '@angular/core';
-import { WidgetComponent } from '../widgets/widget.component';
-import { WidgetInterface } from '../widgets/widget.interface';
+import { WidgetComponent } from './widget.component';
+import { WidgetInterface } from './widget.interface';
 import { WidgetsService } from './widgets.service'
 import { WidgetsModule } from './widgets.module'
 

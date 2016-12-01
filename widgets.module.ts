@@ -1,5 +1,5 @@
 import { NgModule, ModuleWithProviders } from '@angular/core'; 
-import { BrowserModule } from '@angular/platform-browser'; // this is so ngIf, etc works
+import { BrowserModule } from '@angular/platform-browser';
 
 import { WidgetInterface } from './widget.interface';
 import { WidgetsComponent } from './widgets.component';
