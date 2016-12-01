@@ -6,7 +6,6 @@ import { RouterModule }   from '@angular/router';
 import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 
-//import { WidgetsModule, WidgetsComponent } from './widgets/widgets.module' // to implement widgets
 import { WidgetsModule, WidgetsComponent } from '../../node_modules/a2-widgets/widgets.module' // to implement widgets
 
 import { AppComponent } from './app.component';
