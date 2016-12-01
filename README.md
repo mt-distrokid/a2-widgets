@@ -29,7 +29,7 @@ npm install a2-widgets --save
 }
     ```
 
-    Contents of the json file are mapped to this interface;
+    Note: The contents of the json file are mapped to this interface;
     ```
 	export interface WidgetInterface {
 	    id?:string;         // unique id automatically assigned
@@ -46,6 +46,8 @@ npm install a2-widgets --save
 2. Add the WidgetsModule to app module imports;
 
     ```
+        Import { WidgetsModule } "../node_modules/a2-widgets/widgets.module";
+
 	@NgModule({
 	  imports: [
 	    ...
