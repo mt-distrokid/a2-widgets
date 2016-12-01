@@ -1,6 +1,5 @@
 import { Component, Directive, Input } from '@angular/core';
 import { WidgetInterface } from './widget.interface';
-import { AppModule } from '../app.module';
 
 @Component({
   selector: 'app-widget',
