@@ -74,3 +74,4 @@ npm install a2-widgets --save
 	})
     ```
 
+<img src="https://raw.githubusercontent.com/mt1955/a2-widgets/master/man/example.png" />
