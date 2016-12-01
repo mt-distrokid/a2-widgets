@@ -46,7 +46,7 @@ export interface WidgetInterface {
 2. For each component based widget
     1. Add component to WidgetMap in widgets.map.ts
 
-<pre>
+        <pre>
 import {Component} from '@angular/core';
 
 // for each dynamic component, e.g.
@@ -56,13 +56,13 @@ export const WidgetMap:any = {
     // for each dynamic component, e.g.
     'app-hello': HelloComponent
 };
-</pre>
+        </pre>
 
     2. Add component to entryComponents in app module
 
-<pre>
+        <pre>
 ...
 entryComponents:[HelloComponent],
 ...
-</pre>
+        </pre>
 
