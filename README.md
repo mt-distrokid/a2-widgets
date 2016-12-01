@@ -1,6 +1,7 @@
 # a2-widgets
 angular2 flex widgets
 
+
 <pre>
 // example widget definitions json file
 {
