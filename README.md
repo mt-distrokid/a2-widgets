@@ -1,4 +1,4 @@
-# Angular2 flex widgets
+# Angular 2; flex widgets
 
 ## Installing
 You can add a2-widgets to your project using npm;
@@ -6,9 +6,12 @@ You can add a2-widgets to your project using npm;
 npm install a2-widgets --save
 ```
 
+## Configuration
 
+1. Create a json file that defines your widgets.
+
+Example widget definitions json file;
 <pre>
-// example widget definitions json file
 {
     "data":[
         {"title":"Widget HTML",
@@ -26,8 +29,8 @@ npm install a2-widgets --save
 }
 </pre>
 
+Contents of the json file are mapped to this interface;
 <pre>
-// contents of json file get mapped to this interface
 export interface WidgetInterface {
     id?:string;         // unique id automatically assigned
     title?: string;     // title of widget
@@ -39,9 +42,11 @@ export interface WidgetInterface {
 };
 </pre>
 
-<pre>
-// add dynamic components to widgets.map.ts
 
+2. For each component based widget
+    1. Add component to WidgetMap in widgets.map.ts
+
+<pre>
 import {Component} from '@angular/core';
 
 // for each dynamic component, e.g.
@@ -53,9 +58,11 @@ export const WidgetMap:any = {
 };
 </pre>
 
-<pre>
-// add dynamic components to app module's entryComponents array
+    2. Add component to entryComponents in app module
 
+<pre>
+...
 entryComponents:[HelloComponent],
+...
 </pre>
 
