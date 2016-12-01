@@ -43,26 +43,26 @@ npm install a2-widgets --save
     ```
 
 
-2. For each component based widget
-    1. Add component to WidgetMap in widgets.map.ts
+2. Add the WidgetsModule to app module imports;
 
-        ```
-		import {Component} from '@angular/core';
-
-		// for each dynamic component, e.g.
-		import {HelloComponent} from '../hello/hello.component'
-
-		export const WidgetMap:any = {
-	    	    // for each dynamic component, e.g.
-		    'app-hello': HelloComponent
-		};
-        ```
-
-    2. Add component to entryComponents in app module
-
-        ```
-		...
-		entryComponents:[HelloComponent],
-		...
-        ```
+    ```
+	@NgModule({
+	  imports: [
+	    ...
+	    WidgetsModule.setOptions(
+	      { 
+       		 widgets_url: "./app/resources/data/custom.json",
+       		 components: {
+	          'app-hello': HelloComponent
+       		 }
+      		}
+   	    ),
+    	    ...
+           ],
+           entryComponents: [
+             HelloComponent
+           ],
+  	   bootstrap: [AppComponent]
+	})
+    ```
 
