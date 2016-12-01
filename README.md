@@ -32,7 +32,7 @@ npm install a2-widgets --save
                 }
     ```
 
-    Note: The contents of the json file are mapped to this interface;
+    Note: The contents of the json file are ignored except for the "widgets" array which is mapped to this interface;
     ```
 	export interface WidgetInterface {
 	    id?:string;         // unique id automatically assigned
