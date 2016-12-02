@@ -2,7 +2,7 @@ import { Component, Directive, Input } from '@angular/core';
 import { WidgetInterface } from './widget.interface';
 
 @Component({
-  selector: 'app-widget',
+  selector: 'a2widget',
   templateUrl: './widget.component.html',
   styleUrls: ['./widget.component.css']
 })
@@ -12,16 +12,15 @@ export class WidgetComponent {
 
 import {Pipe, PipeTransform} from '@angular/core';
 import {DomSanitizer, SafeResourceUrl, SafeUrl} from '@angular/platform-browser';
-@Pipe({ name: 'safehtml' })
-export class SafeHTMLPipe implements PipeTransform {
+@Pipe({ name: 'a2widgetIframe' })
+export class WidgetSafeHTMLPipe implements PipeTransform {
   constructor(private _sanitizer: DomSanitizer) {}
   transform(url) {
     return this._sanitizer.bypassSecurityTrustResourceUrl(url);
   }
 } 
 
-
-import {ViewContainerRef,  ComponentFactoryResolver } from '@angular/core';
+import { ViewContainerRef,  ComponentFactoryResolver } from '@angular/core';
 import { WidgetMap } from './widgets.module';
 
 @Directive({selector: '[dynamicWidget]'})

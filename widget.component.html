@@ -1,6 +1,7 @@
 <div [ngClass]="widget.classes" [ngStyle]="widget.style">
-    <div class="title">{{widget.title}}</div>
+    <div class="title"><span>{{widget.title}}</span></div>
     <div *ngIf="widget.html" class="widget-body" [innerHTML]="widget.html"></div> <!-- static html -->
-    <div *ngIf="widget.url" class="widget-body"><iframe [src]="widget.url | safehtml"></iframe></div> <!-- iframe -->
+    <div *ngIf="widget.url" class="widget-body"><iframe [src]="widget.url | a2widgetIframe"></iframe></div> <!-- iframe -->
     <div *ngIf="widget.component" [dynamicWidget]="widget.component"></div> <!-- some other component -->
 </div>
+

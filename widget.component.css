@@ -1,4 +1,4 @@
-.widget {
+.a2widget {
     position:relative;
     min-width: 300px;
     min-height: 250px;
@@ -6,28 +6,34 @@
     background-color: white;
 }
 
-.widget .title {
+.a2widget .title {
     position: relative;
     background-color: #003;
     color: white;
     padding: 0.5em;
 }
 
-.widget .widget-body {
+.a2widget .title SPAN {
+    display: inline-block;
+    width: 90%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.a2widget .widget-body {
     position: absolute;
     top:2.2em;left:0;right:0;bottom:0;
     overflow: auto;
     padding: 0.5em;
 }
 
-.widget.unpadded .widget-body {
+.a2widget.unpadded .widget-body {
     padding: 0;
 }
 
-.widget IFRAME {
+.a2widget IFRAME {
     display: block;
     border: none;
     overflow: auto;
     height: 100%;
 }
-

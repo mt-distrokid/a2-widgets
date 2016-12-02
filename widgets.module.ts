@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser'; // this is so ngIf, e
 
 import { WidgetInterface } from './widget.interface';
 import { WidgetsComponent } from './widgets.component';
-import { WidgetComponent, SafeHTMLPipe, DynamicWidgetDirective } from './widget.component';
+import { WidgetComponent, WidgetSafeHTMLPipe, DynamicWidgetDirective } from './widget.component';
 
 export { WidgetsComponent } from './widgets.component'
 
@@ -24,21 +24,19 @@ export let WidgetMap:any = {
     BrowserModule
   ],
   declarations: [
-    WidgetsComponent, WidgetComponent, DynamicWidgetDirective, SafeHTMLPipe
+    WidgetsComponent, WidgetComponent, DynamicWidgetDirective, WidgetSafeHTMLPipe
   ],
   exports: [
     WidgetsComponent
-  ],
-  //entryComponents: [],
-  //providers: []
+  ]
 })
 export class WidgetsModule {
 
-    private static widgetsURL = null;
+    private static widgets_url = null;
 
     static setOptions(opts: WidgetOptions) {
 
-        this.widgetsURL = opts.widgets_url;
+        this.widgets_url = opts.widgets_url;
         for (var selector in opts.components) {
             if (opts.components[selector]) {
               WidgetMap[selector] = opts.components[selector];
@@ -49,6 +47,6 @@ export class WidgetsModule {
 
     static getWidgetsURL():string {
 
-      return this.widgetsURL;
+      return this.widgets_url;
     };
 }

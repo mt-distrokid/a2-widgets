@@ -33,8 +33,8 @@ export class WidgetsComponent implements OnInit {
         if (!(this.widgets_options[i].classes instanceof Array)) { // 
           this.widgets_options[i].classes = []; // make sure we have an array 
         }
-        if (this.widgets_options[i].classes.indexOf("widget") < 0) {
-          this.widgets_options[i].classes.unshift("widget")  // make sure we have the widget class
+        if (this.widgets_options[i].classes.indexOf("a2widget") < 0) {
+          this.widgets_options[i].classes.unshift("a2widget")  // make sure we have the widget class
         }
 
         this.widgets.push(new WidgetComponent());
