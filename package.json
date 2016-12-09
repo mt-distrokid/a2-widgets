@@ -1,6 +1,6 @@
 {
   "name": "a2-widgets",
-  "version": "1.0.21",
+  "version": "1.0.22",
   "description": "flex box widgets for Angular2",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
