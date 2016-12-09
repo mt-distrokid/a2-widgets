@@ -45,7 +45,7 @@ export class WidgetsModule {
         return this;
     };
 
-    static getWidgetsURL():string {
+    static get widgetsJSON():string {
 
       return this.widgets_url;
     };

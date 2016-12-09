@@ -24,7 +24,7 @@ export class WidgetsComponent implements OnInit {
 
   ngOnInit() {
 
-    this._widgetsService.fetchWidgets(WidgetsModule.getWidgetsURL()).then(widget_options => {
+    this._widgetsService.fetchWidgets(WidgetsModule.widgetsJSON).then(widget_options => {
 
       this.widgets_options = widget_options;
       for (let i in this.widgets_options) {
